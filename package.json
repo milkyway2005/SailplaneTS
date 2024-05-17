@@ -1,0 +1,20 @@
+{
+  "name": "sailplanets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/script.ts"
+  },
+  "keywords": [],
+  "author": "Denisova Karina",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.4"
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Список дел</title>
+		<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+	
+	<body>
+		<div id="all_content">
+			<div id="header">
+				<div id="text_header">
+					<img src="images/favicon.png">
+					<h1>Список дел</h1>
+				</div>
+				<form id="form" class="header">
+					<input id="text_new" type="text" placeholder="Новый элемент списка"/>
+					<button id="add_button" type="submit" class="main_button">Создать</button>
+					<button id="clean_button" type="reset" class="main_button">Очистить всё</button>
+				</form>
+			</div>
+			
+			<div id="content">
+				<div id="none_todo" class="none">Не найдено ни одного дела</div>	
+				<ol id="all_todos">
+					<li class="todo">
+						<div class="note">
+							<input class="checkbox" type="checkbox">
+							<label class="text">
+								<span>Сделать что-то очень важное</span>
+								<sub>от 11.2.2024</sub>
+							</label>
+						</div>
+						<img class="delete_img" src="images/cross.svg">
+					</li>
+				</ol>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<hr>
+			<p class="text_footer">Copyright &copy;</p>
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+</html>
